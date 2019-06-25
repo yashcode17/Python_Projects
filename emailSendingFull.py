@@ -23,7 +23,7 @@ msg.attach(MIMEText(body, 'plain'))
 server = smtplib.SMTP('smtp.gmail.com',587)
 server.starttls()
 
-server.login('yashg1709@gmail.com','yash888888')
+server.login('yashg1709@gmail.com','**********')
 
 text = msg.as_string()
 server.sendmail(msg['From'],msg['To'], text)
