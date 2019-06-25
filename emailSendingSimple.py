@@ -6,12 +6,6 @@ a=input("enter mail")
 b=input("enter password")
 server.login('%s'%a,'%s'%b)
 
-
-
-# server.sendmail('yashg1709@gmail.com',
-#                 'nandkk07@gmail.com',
-#                 "F**K OFF!!! ;)")
-
 server.sendmail('yashg1709@gmail.com',
                 'nandkk07@gmail.com',
                 "___")
