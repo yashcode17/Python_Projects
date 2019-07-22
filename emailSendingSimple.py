@@ -8,7 +8,7 @@ server.login('%s'%a,'%s'%b)
 
 server.sendmail('from_mail@gmail.com',
                 'to_mail@gmail.com',
-                "___")
+                "message")
 
 server.quit()
 
