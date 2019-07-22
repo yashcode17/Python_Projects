@@ -5,8 +5,8 @@ from email.mime.text import MIMEText
 
 msg=MIMEMultipart()    # create object of MIMEMultipart
 
-msg['From'] = 'yashg1709@gail.com'
-msg['To'] = 'shuchiiii1234@gmail.com'
+msg['From'] = 'from_mail@gail.com'
+msg['To'] = 'to_mail@gmail.com'
 msg['Subject'] = "Subject of Mail"
 filename = r"C:\Users\HP\Desktop\scc_notes.txt"
 
@@ -23,7 +23,7 @@ msg.attach(MIMEText(body, 'plain'))
 server = smtplib.SMTP('smtp.gmail.com',587)
 server.starttls()
 
-server.login('yashg1709@gmail.com','**********')
+server.login('from_mail@gmail.com','**********')
 
 text = msg.as_string()
 server.sendmail(msg['From'],msg['To'], text)
